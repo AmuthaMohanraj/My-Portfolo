@@ -51,59 +51,59 @@ function valid() {
 }
 
 
-// var home = document.getElementById('home')
-// var about = document.getElementById('about');
-// var blog = document.getElementById('blog');
-// var portfolio = document.getElementById('portfolio');
-// var contact = document.getElementById('contact');
+var home = document.getElementById('home')
+var about = document.getElementById('about');
+var blog = document.getElementById('blog');
+var portfolio = document.getElementById('portfolio');
+var contact = document.getElementById('contact');
 
 
-// function bodyhide() {
+function bodyhide() {
 
-//     home.style.display = "block";
-//     about.style.display = "none";
-//     portfolio.style.display = "none";
-//     contact.style.display = "none";
-//     blog.style.display = "none";
-// }
-
-
-// function aboutshow() {
-//     home.style.display = "none";
-//     about.style.display = "block";
-//     portfolio.style.display = "none";
-//     contact.style.display = "none";
-//     blog.style.display = "none";
-// }
+    home.style.display = "block";
+    about.style.display = "none";
+    portfolio.style.display = "none";
+    contact.style.display = "none";
+    blog.style.display = "none";
+}
 
 
-
-// function blogshow() {
-//     home.style.display = "none";
-//     blog.style.display = "block";
-//     about.style.display = "none";
-//     portfolio.style.display = "none";
-//     contact.style.display = "none";
-
-// }
-
-// function portfolioshow() {
-//     home.style.display = "none";
-//     portfolio.style.display = "block";
-//     about.style.display = "none";
-//     contact.style.display = "none";
-//     blog.style.display = "none";
-
-// }
+function aboutshow() {
+    home.style.display = "none";
+    about.style.display = "block";
+    portfolio.style.display = "none";
+    contact.style.display = "none";
+    blog.style.display = "none";
+}
 
 
 
+function blogshow() {
+    home.style.display = "none";
+    blog.style.display = "block";
+    about.style.display = "none";
+    portfolio.style.display = "none";
+    contact.style.display = "none";
 
-// function contactshow() {
-//     home.style.display = "none";
-//     contact.style.display = "block";
-//     about.style.display = "none";
-//     portfolio.style.display = "none";
-//     blog.style.display = "none";
+}
 
-// }
+function portfolioshow() {
+    home.style.display = "none";
+    portfolio.style.display = "block";
+    about.style.display = "none";
+    contact.style.display = "none";
+    blog.style.display = "none";
+
+}
+
+
+
+
+function contactshow() {
+    home.style.display = "none";
+    contact.style.display = "block";
+    about.style.display = "none";
+    portfolio.style.display = "none";
+    blog.style.display = "none";
+
+}

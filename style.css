@@ -144,7 +144,7 @@ svg {
 }
 
 .face-img-bg {
-  background: url(https://www.adhamdannaway.com/wp-content/themes/dannaway/images/adham-dannaway-designer-coder.jpg)no-repeat;
+  background: url(./asset/my-profile.png)no-repeat;
   width: 68rem;
   height: 600px;
   background-size: 100% 100%;
@@ -299,7 +299,7 @@ svg {
 }
 
 .content-about-me,
-.my-portfolio,
+.project,
 .contact-content {
   text-align: center;
   padding: 0px 63px;
@@ -318,7 +318,7 @@ svg {
 }
 
 .about,
-.portfolio,
+.project,
 .contact {
   padding: 0px 4rem;
 }
@@ -351,7 +351,7 @@ svg {
 @media (max-width:375.98px) {
 
   .about,
-  .portfolio,
+  .project,
   .contact {
     padding: 0px 4rem;
   }
@@ -365,7 +365,7 @@ svg {
 @media (max-width:770px) {
 
   .about,
-  .portfolio,
+  .project,
   .contact {
     padding: 0rem 2rem;
   }
@@ -404,15 +404,13 @@ svg {
   }
 }
 
-.about-right-block,
-.portfolio-right-block {
+.about-right-block{
   display: flex;
   justify-content: center;
   padding: 0px;
 }
 
-.about img,
-.portfolio img {
+.about img {
   width: 350px;
   height: 369px;
 }
@@ -885,7 +883,7 @@ textarea {
   #home,
   #about,
   #contact,
-  #portfolio,
+  #project,
   #blog {
     margin-bottom: 10rem;
   }
@@ -896,10 +894,10 @@ textarea {
   #home,
   #about,
   #contact,
-  #portfolio,
+  #project,
   #blog {
     margin-bottom: 2rem;
-    
+
   }
 }
 
@@ -937,9 +935,77 @@ textarea {
 }
 
 
+.contact ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:0px 4px 0px 0px;
+}
+
+.contact svg{
+  width:100px;
+  height:100px;
+}
+
+  @media (max-width:786px){
+    .contact ul{
+      padding: 0px 62px;
+    }
+  }
+
+@media (max-width:425.68px){
+  .contact ul{
+  padding:0px 68px;
+  }
+}
+
+@media (max-width:375.68px){
+  .contact ul{
+    padding: 0px 22px 0px 0px
+  }
+}
 
 
 
+
+/*----------------------------------------------------*/
+/*countdown animation  css */
+
+.animation {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  top:0px;
+  z-index: 1;
+}
+
+.body{
+  overflow:hidden;
+}
+
+.animation div {
+  width: 50%;
+}
+
+.first {
+  background-color: black;
+}
+
+.second {
+  background-color: wheat;
+}
+
+#count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+  color: white;
+}
 
 
 
@@ -1021,3 +1087,42 @@ textarea {
 .ext-line {
   border-bottom: 4px solid #3cb371; /* Dark Sea Green 
 } */
+
+
+
+.project-item{
+  margin-bottom:2rem;
+}
+
+ .project-item div{
+ border:1px solid black;
+ height:245px;
+}
+
+.project1-img{
+  background-image: url(asset/about-carrer.jpg);
+  background-size:100% 100%;
+}
+
+.project2-img{
+  background-image: url(asset/about-carrer.jpg);
+  background-size:100% 100%;
+}
+
+.project3-img{
+  background-image: url(asset/about-carrer.jpg);
+  background-size:100% 100%;
+}
+
+@media (max-width:425.68px){
+  .project-item{
+    margin-bottom:2rem;
+    display:flex;
+    flex-direction: column;
+  } 
+
+  .project-item div{
+    width:100%;
+    height:300px;
+   }
+}
