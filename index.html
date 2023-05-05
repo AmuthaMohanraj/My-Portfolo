@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+    , initial-scale=1.0">
+  <title>AmuthaMohanraj</title>
+  <link href="https://uploads-ssl.webflow.com/640f201370d08d3c566b09be/640f201370d08d9bf76b0a9d_MilenaGifFavLast.gif"
+    rel="shortcut icon" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="bodyhide()">
+  <!--   <div class="animation-part">
+        <div class="container intro-container">
+            <h1 class="h1 first-one-line">Amutha</h1>
+            <div class="two-line">
+                <span class="h6">Your B2B /</span>
+                <span class="h6">tech copywriter</span>
+            </div>
+            <h1 class="h1 second-one-line">Mohanraj</h1>
+        </div>
+    </div>  -->
+
+
+  <div class="bg-black" style="position: fixed; top:0px; z-index: 1;
+      width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="padding: 3px 14px;">
+      <a class="navbar-brand" onclick="bodyhide()" href="#"><img
+          src="https://uploads-ssl.webflow.com/640f201370d08d3c566b09be/640f201370d08d1c9b6b09f8_Logo-light.svg"
+          loading="lazy" alt="" class="image-full is-nav"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" id="about-link" onclick="aboutshow()"
+              href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#" onclick="blogshow()">blog</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#portfolio"
+              onclick="portfolioshow()">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#contact"
+              onclick="contactshow()">contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-collapse collapse justify-content-end" id="navbarSocial">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white"
+                class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <section id="home">
+    <section class="home-section mt-10">
+      <div class="face-img">
+        <div class="row face-img-bg">
+          <div class="col-6 left-side-container">
+            <a href="#" style="text-decoration:none;">
+              <div class="decription ms-2">
+                <h1>designer</h1>
+                <p>Product designer specialising in UI design and design systems.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 right-side-container">
+            <a href="#" style="text-decoration:none;">
+              <div class="decription me-2">
+                <h1><span>
+                    <span>coder<span></span></h1>
+                <p>Front end developer who writes clean, elegant and efficient code.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <h6 style="text-align:center; margin-bottom:2rem;">SOME OF MY LATEST WORK</h6>
+
+    <div class="row my-latest-project-intro" style="max-width:1040px; margin:auto;">
+
+      <div class="col-sm-3 work1-div project-list">
+
+      </div>
+
+      <div class="col-sm-3 work2-div  project-list">
+
+      </div>
+
+      <div class="col-sm-3 work3-div project-list">
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="about">
+
+    <div class="content-about-me mt-10">
+      <h1 class="h1-common-styles">about me</h1>
+      <p class="p-common-styles" id="p-unique" style="text-align:center;
+      font-weight: bold;
+      text-align: center;
+      color: #333333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 30px;">Meet Mohanraj: A Talented
+        Product Designer from India<img class="bear-img" src="asset/bear.png"></p>
+    </div>
+
+
+
+    <div class="about-content-container row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <p class="p-common-styles">I am a passionate and motivated software developer with a strong background in
+          computer applications. My journey has been filled with challenges and opportunities for growth. I have honed
+          my skills in a variety of technologies, from front-end web development to back-end programming.</p>
+        <p class="p-common-styles">In my current role as a Full Stack Developer at Finstein.AI, I collaborate closely
+          with cross-functional teams to design and implement solutions that meet the unique needs of our clients.
+          Outside of work, I am a dedicated athlete and team player, and I believe that my experiences as an athlete
+          have taught me valuable lessons in leadership, discipline, and perseverance that I apply to my work as a
+          software developer.</p>
+        <p class="p-common-styles">I am excited to continue my journey as a software developer and to make a positive
+          impact in the world through my work.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 about-right-block">
+        <img class="major preload" id="img" src="asset/desion.jpg" alt="mohanraj ui designer">
+      </div>
+    </div>
+
+
+
+
+    <div class="row my-img-container d-flex justify-content-space-evenly">
+      <div class="col-sm-6 col-md-6 col-lg-3 img-div mb-3"><img src="asset/childdevelop.jpg"></div>
+      <div class="col-sm-6 col-md-6 col-lg-3 img-div mb-3"><img src="asset/running.jpg"></div>
+      <div class="col-sm-6 col-md-6 col-lg-3 img-div mb-3"><img src="asset/80-20-principle.jpg"></div>
+    </div>
+
+
+    <!-- Skills session -->
+
+    <div class="skills-section">
+
+
+      <div class="content" style="text-align:center;">
+        <h1 class="h1-common-styles">skills</h1>
+      </div>
+
+      <div class="row skill-blocks">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle d-flex justify-content-center align-item-center" style="color:white;">Html</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">Css</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">JavaScript</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="row skill-blocks">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">C# .Net</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div" style="position: relative;">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">Java</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div" style="position: relative;">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">Angular</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="row skill-blocks">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div" style="position: relative;">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">TypeScript</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">Sql</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 skill-one card">
+          <div class="excellent-div" style="position: relative;">
+            <span class="line ext-line"></span>
+            <h6>Excellent</h6>
+            <div class="good-div">
+              <span class="line good-line"></span>
+              <h6>Good</h6>
+              <div class="some-div">
+                <span class="line some-line"></span>
+                <h6 class="last-line">Some</h6>
+
+                <div class="rectangle-circle">
+                  <div class="rectangle"></div>
+                  <div class="circle">My Sql</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>  
+  </section>
+
+
+
+  <!-- portfolio section-->
+
+  <section id="portfolio" class="portfolio">
+
+    <div class="my-portfolio">
+      <h1 class="h1-common-styles">portfolio</h1>
+      <p class="p-common-styles" id="p-unique" style="font-size:1.3rem; text-align:center;">Check out some of my latest
+        UI/UX design case studies.</p>
+    </div>
+
+
+    <div class="portfolio-content-container row">
+
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <p class="p-common-styles">I've worked at start-ups, tech companies and corporates on a range of different
+          projects, including design systems, websites and apps.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 portfolio-right-block">
+        <img class="major preload"
+          src="https://www.adhamdannaway.com/wp-content/themes/dannaway/images/about-adham-dannaway.jpg"
+          alt="mohanraj ui designer">
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- contact section-->
+
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h1 class="h1-common-styles">contact</h1>
+    </div>
+
+    <div class="row social-media-container">
+      <div class="col">
+        <p class="p-common-styles">If you have any questions or would like to discuss a project, please don't hesitate
+          to get in touch with me. You can reach me via email at [Your Email], phone at [Your Phone Number], or by
+          filling out the contact form on my website.</p>
+        <p class="p-common-styles">Thank you for visiting my website, and I look forward to hearing from you!</p>
+        <!-- <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul> -->
+      </div>
+      <div class="col">
+        <iframe>
+
+        </iframe>
+      </div>
+    </div>
+
+    <div class="form row">
+      <div class="col-lg-6 col-sm-12 col-md-12">
+        <form onsubmit="return valid()" action="test.html">
+          <div>
+            <label style="margin-bottom: 0.1rem;" class="form-label">Name</label>
+            <input class="form-control my-3" id="bx1" placeholder="Enter Your Name" type="text">
+            <span id="er1"></span>
+          </div>
+          <div>
+            <label style="margin-bottom: 0.1rem;" class="form-label">Email</label>
+            <input class="form-control my-3" id="bx2" placeholder="Enter Your EmailId" type="text">
+            <span id="er2"></span>
+          </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 col-md-12">
+        <label style="margin-bottom: 0.1rem;" class="form-label">Message</label>
+        <textarea class="form-control mb-3" placeholder="Enter Your Message" id="bx3"></textarea>
+        <span id="er3"></span>
+      </div>
+    </div>
+
+    <div class="submit-btn">
+      <input type="submit" class="btn btn-success" href="test.html" value="Submit"></input>
+      </form>
+    </div>
+
+    <div class="validation">
+      <span id="error"></span>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="row footer-section">
+      <div class="col copy-rights">
+        <ul>
+          <li>© 2023 AmuthaMohanraj</li>
+        </ul>
+      </div>
+
+      <div class="col footer-link-container">
+        <ul class="footer-nav">
+          <li class="footer-nav">
+            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#about" onclick="aboutshow()">about</a>
+          </li>
+          <li class="footer-item">
+            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#" onclick="blogshow()">blog</a>
+          </li>
+          <li class="footer-item">
+            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#portfolio"
+              onclick="portfolioshow()">portfolio</a>
+          </li>
+          <li class="footer-item">
+            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#contact" onclick="contactshow()">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="top-to-back">
+      <a href="#"></a>
+    </div>
+  </footer>
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
