@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="load()">
+<body onload="bodyhide()">
   <!--   <div class="animation-part">
         <div class="container intro-container">
             <h1 class="h1 first-one-line">Amutha</h1>
@@ -39,7 +39,7 @@
   <div class="bg-black" style="position: fixed; top:0px; z-index: 1;
       width: 100%;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="padding: 3px 14px;">
-      <a class="navbar-brand" onclick="load()" href="#"><img
+      <a class="navbar-brand" onclick="bodyhide()" href="#"><img
           src="https://uploads-ssl.webflow.com/640f201370d08d3c566b09be/640f201370d08d1c9b6b09f8_Logo-light.svg"
           loading="lazy" alt="" class="image-full is-nav"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,19 +50,19 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" id="about-link" onclick="aboutshow()"
+            <a style="font-size: 1.15rem;" class="nav-link  mx-2" id="about-link" onclick="aboutshow()"
               href="#about">about</a>
           </li>
+          <!-- <li class="nav-item">
+            <a style="font-size: 1.15rem;" class="nav-link  mx-2" href="#" onclick="blogshow()">blog</a>
+          </li> -->
           <li class="nav-item">
-            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#" onclick="blogshow()">blog</a>
+            <a style="font-size: 1.15rem;" class="nav-link  mx-2" 
+              onclick="projectshow()" href="#project">project</a>
           </li>
           <li class="nav-item">
-            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#portfolio"
-              onclick="portfolioshow()">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-size: 1.15rem;" class="nav-link text-white  mx-2" href="#contact"
-              onclick="contactshow()">contact</a>
+            <a style="font-size: 1.15rem;" class="nav-link  mx-2" 
+              onclick="contactshow()" href="#contact">contact</a>
           </li>
         </ul>
       </div>
@@ -118,8 +118,7 @@
           <div class="col-6 right-side-container">
             <a href="#" style="text-decoration:none;">
               <div class="decription me-2">
-                <h1><span>
-                    <span>coder<span></span></h1>
+                <h1><span>&lt;</span><span>coder</span><span>&gt;</span></h1>
                 <p>Front end developer who writes clean, elegant and efficient code.</p>
               </div>
             </a>
@@ -432,20 +431,26 @@
     
        <h1 class="h1-common-styles">projects</h1>
 
+       <h5>Entrepreneurship in your community</h5>
        <div class="row project-item">
         <div class="col-4 project1-img"></div>
-        <div class="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti quas aliquam dolorem, optio dolor, expedita soluta iste cupiditate recusandae quo deserunt facilis eaque officiis. Aut magni maxime doloremque ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit. Quis illum similique quae vitae esse iure ipsum eligendi alias ut? Iure, error quaerat recusandae ut nesciunt molestias similique maxime!</div>
+        <div class="col-8 project-overview">
+          <p class="p-common-styles">Welcome to our website, using HTML and CSS web technology. Our complete guide provides step-by-step instructions and practical advice.
+             Whether you're an aspiring entrepreneur or an established business owner looking to expand your digital presence, our library of tools and resources has something for everyone.</p>
+      </div>
        </div>
 
+       <h5>Student CGPA calculator</h5>
        <div class="row project-item">
-        <div class="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti quas aliquam dolorem, optio dolor, expedita soluta iste cupiditate recusandae quo deserunt facilis eaque officiis. Aut magni maxime doloremque ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit. Quis illum similique quae vitae esse iure ipsum eligendi alias ut? Iure, error quaerat recusandae ut nesciunt molestias similique maxime!</div>
+        <div class="col-8 project-overview"><p class="p-common-styles">This is a web-based student marklist calculation application system that utilizes HTML, CSS, JavaScript, C#, and SQL Server technologies. The system enables users to manage data flow between the client application and server, perform CGPA and percentage calculations, and add student marks details.</p></div>
         <div class="col-4 project2-img"></div>
        </div>
 
        
+       <h5>Railway ticket booking apllication</h5>
        <div class="row project-item">
         <div class="col-4 project3-img"></div>
-        <div class="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut, quidem eum recusandae maiores expedita minima, rerum ea esse saepe reprehenderit numquam consequuntur hic impedit sapiente delectus reiciendis vel molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium fuga distinctio nam esse iste, consectetur maxime reiciendis error, animi dolor aperiam magnam eligendi minus eos nulla quidem officia praesentium?</div>
+        <div class="col-8 project-overview"><p class="p-common-styles">This is a web-based application developed using ASP.NET and C# programming language with an MS SQL Server database. The application allows users to find train details, book and cancel tickets online, making the process more convenient. Users can book their tickets online from the comfort of their home with just one click.</p></div>
        </div>
 
   </section>
@@ -458,8 +463,8 @@
       <h1 class="h1-common-styles">contact</h1>
     </div>
 
-    <div class="row social-media-container">
-      <div class="col">
+    <div class="row social-media-container" style="margin-bottom: 1rem;">
+      <div class="col-lg-6 col-sm-12 col-md-12">
         <p class="p-common-styles">If you have any questions or would like to discuss a project, please don't hesitate
           to get in touch with me. You can reach me via email at [Your Email], phone at [Your Phone Number], or by
           filling out the contact form on my website.</p>
@@ -487,9 +492,8 @@
               </svg></a></li>
           </ul>
       </div>
-      <div class="col">
-        <iframe>
-
+      <div class="col-lg-6 col-sm-12 col-md-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.659906201726!2d80.25065131040976!3d13.057306687212945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b05cf2dd5b%3A0xa4e3aa5d2f35a206!2sFINSTEIN%20ADVIZORY%20-%20NextGen%20Center!5e0!3m2!1sen!2sin!4v1683439900202!5m2!1sen!2sin" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </div>
@@ -511,7 +515,7 @@
 
       <div class="col-lg-6 col-sm-12 col-md-12">
         <label style="margin-bottom: 0.1rem;" class="form-label">Message</label>
-        <textarea class="form-control mb-3" placeholder="Enter Your Message" id="bx3"></textarea>
+        <textarea class="form-control mb-3" placeholder="Enter Your Message" onkeyup="keyup()" id="bx3"></textarea>
         <span id="er3"></span>
       </div>
     </div>
@@ -540,12 +544,12 @@
           <li class="footer-nav">
             <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#about" onclick="aboutshow()">about</a>
           </li>
-          <li class="footer-item">
+          <!-- <li class="footer-item">
             <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#" onclick="blogshow()">blog</a>
-          </li>
+          </li> -->
           <li class="footer-item">
-            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#portfolio"
-              onclick="portfolioshow()">portfolio</a>
+            <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#project"
+              onclick="projectshow()">project</a>
           </li>
           <li class="footer-item">
             <a style="font-size: 1.15rem;" class="footer-link  mx-2" href="#contact" onclick="contactshow()">contact</a>
@@ -561,12 +565,6 @@
   </footer>
 
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -574,40 +572,12 @@
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<div class="animation">
+<!-- <div class="animation">
   <div class="col-6 first" id="first" style="color: white"></div>
   <div class="col-6 second" id="second"></div>
   <h2 id="count">5</h2>
-</div>
-
-
-<script>
-  function load(){
-    let i = 5;
-    let count = document.getElementById('count');
-    let firstdiv = document.getElementById('first');
-    let seconddiv = document.getElementById('second');
-    let animation=document.getElementById('animation');
-    var home = document.getElementById('home');
-
-    let interval = setInterval(() => {
-      document.body.style.overflow = "hidden";
-        i--;
-        count.innerHTML = i;
-        if (i === 0) {
-          clearInterval(interval);
-            count.innerHTML = '';
-            count.style.fontFamily = 'Lato';
-            firstdiv.style.width = '0px';
-            seconddiv.style.width = '0px';
-            document.body.style.overflow = "scroll";
-            
-        }
-    }, 1000);
-}
-</script>
+</div> -->
 
 
 </body>
-
 </html>

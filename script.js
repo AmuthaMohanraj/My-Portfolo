@@ -50,46 +50,53 @@ function valid() {
 
 }
 
+function keyup(){
+    let limit=100;
+    let count=message.value.length;
+    error3.innerHTML=count;
+}
+
+
 
 var home = document.getElementById('home')
 var about = document.getElementById('about');
 var blog = document.getElementById('blog');
-var portfolio = document.getElementById('portfolio');
+var project = document.getElementById('project');
 var contact = document.getElementById('contact');
 
 
-function bodyhide() {
+function bodyhide(){
 
     home.style.display = "block";
     about.style.display = "none";
-    portfolio.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "none";
     blog.style.display = "none";
 }
 
 
-function aboutshow() {
+function aboutshow(){
     home.style.display = "none";
     about.style.display = "block";
-    portfolio.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "none";
     blog.style.display = "none";
 }
 
 
 
-function blogshow() {
+function blogshow(){
     home.style.display = "none";
     blog.style.display = "block";
     about.style.display = "none";
-    portfolio.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "none";
 
 }
 
-function portfolioshow() {
+function projectshow(){
     home.style.display = "none";
-    portfolio.style.display = "block";
+    project.style.display = "block";
     about.style.display = "none";
     contact.style.display = "none";
     blog.style.display = "none";
@@ -99,11 +106,35 @@ function portfolioshow() {
 
 
 
-function contactshow() {
+function contactshow(){
     home.style.display = "none";
     contact.style.display = "block";
     about.style.display = "none";
-    portfolio.style.display = "none";
+    project.style.display = "none";
     blog.style.display = "none";
 
 }
+
+//   function load(){
+//     let i=3;
+//     let count = document.getElementById('count');
+//     let firstdiv = document.getElementById('first');
+//     let seconddiv = document.getElementById('second');
+//     // let animation=document.getElementById('animation');
+//     // var home = document.getElementById('home');
+
+//     let interval = setInterval(() => {
+//       document.body.style.overflow = "hidden";
+//         i--;
+//         count.innerHTML = i;
+//         if (i ===-1) {
+//           clearInterval(interval);
+//             count.innerHTML = '';
+//             count.style.fontFamily = 'Lato';
+//             firstdiv.style.width = '0px';
+//             seconddiv.style.width = '0px';
+//             document.body.style.overflow = "scroll";
+            
+//         }
+//     }, 1000);
+// }
